@@ -1,0 +1,105 @@
+{% extends 'questions/base.html' %}
+{% block content %}
+<section id="about-banner">
+    <div class="container">
+        <div class="row">
+            <div class="menu">
+                <nav class="navbar navbar-default menu_top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       {% load static %}
+                        <a href="/" class="logo"><img src="{% static 'questions/img/logo.gif' %}"></a>  </div>
+                    <div class="collapse navbar-collapse" id="main-menu" >
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/about">О сервисе</a></li>
+                            <li><a href="/contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row main-content">
+            <div class="col-md-12 text-banner text-center">
+                <h1>Результаты парсинга</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="result-optim">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center"><a href="/result_ruk"> Общая оценка</a></h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="/result_ruk_seo" class="dropdown-toggle" data-toggle="dropdown">Оптимизация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/result_ruk_seo" class="tkd-js">Tittle, Keywords, Description</a></li>
+                                <li><a href="/result_ruk_seo" class="header-js">Заголовки</a></li>
+                                <li><a href="/result_ruk_seo" class="untext-js">Уникальность текста</a></li>
+                                <li><a href="/result_ruk_seo" class="erlink-js">Битые ссылки, счетчики</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="/result_ruk-index" class="dropdown-toggle" data-toggle="dropdown">Индексация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/result_ruk-index" class="yaruk-js">Яндекс</a></li>
+                                <li><a href="/result_ruk-index" class="goruk-js">Google</a></li>
+                                <li><a href="/result_ruk-index" class="smmruk-js">Социальные сети</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center"><a href="/exportdate">Экспорт данных</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-mark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mark-shad">
+                <div class="row">
+            <div class="col-md-5 col-sm-5">
+                {% load static %}
+                <img src="{% static 'questions/img/desktop.png' %}">
+            </div>
+            <div class="col-md-7 col-sm-7">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="">kuznecovskyfarfor.ru</a>
+                        <p>December 2, 2017 10:55 PM</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        fdsjfsdhfksj
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <h2 class="text-center">На вашем сайте выявленно много ошибок, связанных с <a href="/result_ruk_seo">SEO-оптимизацией</a></h2>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

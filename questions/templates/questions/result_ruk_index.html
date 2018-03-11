@@ -1,0 +1,247 @@
+{% extends 'questions/base.html' %}
+{% block content %}
+    <section id="about-banner">
+    <div class="container">
+        <div class="row">
+            <div class="menu">
+                <nav class="navbar navbar-default menu_top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        {% load static %}
+                        <a href="/" class="logo"><img src="{% static 'questions/img/logo.gif' %}"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu" >
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/about">О сервисе</a></li>
+                            <li><a href="/contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row main-content">
+            <div class="col-md-12 text-banner text-center">
+                <h1>Результаты парсинга</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="result-optim">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center"><a href="/result_ruk"> Общая оценка</a></h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="/result_ruk_seo" class="dropdown-toggle" data-toggle="dropdown">Оптимизация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/result_ruk_seo" class="tkd-js">Tittle, Keywords, Description</a></li>
+                                <li><a href="/result_ruk_seo" class="header-js">Заголовки</a></li>
+                                <li><a href="/result_ruk_seo" class="untext-js">Уникальность текста</a></li>
+                                <li><a href="/result_ruk_seo" class="erlink-js">Битые ссылки, счетчики</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Индексация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" class="yaruk-js">Яндекс</a></li>
+                                <li><a href="#" class="goruk-js">Google</a></li>
+                                <li><a href="#" class="smmruk-js">Социальные сети</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center"><a href="/exportdate">Экспорт данных</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="seo-ruk">
+    <div class="container">
+        <div class="ruk-ya">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Индексация Яндекс</h1>
+                </div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#zaprosiya">Запросы</a></li>
+                <li><a data-toggle="tab" href="#snippetya">Сниппет</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="zaprosiya" class="tab-pane fade in active">
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead>
+                            <tr>
+                                <th class="col-xs-4">Запрос</th>
+                                <th class="col-xs-4">Страница</th>
+                                <th class="col-xs-4">Позиция</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="snippetya" class="tab-pane fade">
+                    <div class="col-md-6 col-sm-6">
+                        <h3>Сниппет</h3>
+                        <h4>Уникальность Title : <span>80%</span></h4>
+                        <h4>Уникальность Description : <span>80%</span></h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <p>аоврлыоф авло рфывлор ловыра ывлоа рв ловра фовыалр выло влоыфра фвыл
+                         вылоар фолвра жл вар ыфлоар флвды</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-12 snippet">
+                            <div class="col-md-12">
+                                <h4>Сниппет</h4>
+                            </div>
+                            <div class="col-md-12 snipet">
+                                <h3>Проверка текста на уникальность онлайн, эффективный.</h3>
+                                <a href="">text.ru</a>
+                                <p>Сервис онлайн проверки текста на уникальность TEXT.RU покажет процент уникальности текста.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ruk-go">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Индексация Google</h1>
+                </div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#zaprosigo">Запросы</a></li>
+                <li><a data-toggle="tab" href="#snippetgo">Сниппет</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="zaprosigo" class="tab-pane fade in active">
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead>
+                            <tr>
+                                <th class="col-xs-4">Запрос</th>
+                                <th class="col-xs-4">Страница</th>
+                                <th class="col-xs-4">Позиция</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">@mdo</td>
+                                <td class="col-xs-4">404</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="snippetgo" class="tab-pane fade">
+                    <div class="col-md-6 col-sm-6">
+                        <h3>Сниппет</h3>
+                        <h4>Уникальность Title : <span>80%</span></h4>
+                        <h4>Уникальность Description : <span>80%</span></h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <p>аоврлыоф авло рфывлор ловыра ывлоа рв ловра фовыалр выло влоыфра фвыл
+                            вылоар фолвра жл вар ыфлоар флвды</p>
+                    </div>
+                    <div class="col-md-12 snippet">
+                        <div class="col-md-12">
+                            <h4>Сниппет</h4>
+                        </div>
+                        <div class="col-md-12 snipet">
+                            <h3>Проверка текста на уникальность онлайн, эффективный.</h3>
+                            <a href="">text.ru</a>
+                            <p>Сервис онлайн проверки текста на уникальность TEXT.RU покажет процент уникальности текста.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ruk-smm">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Социальные сети</h1>
+                </div>
+            </div>
+            <div class="row social">
+                <div class="col-md-3 col-sm-3 text-center">
+
+                    <img src="{% static 'questions/img/social-icon/facebookb.png' %}">
+                    <h4>Facebook</h4>
+                    <h4>Есть</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 text-center">
+                    <img src="{% static 'questions/img/social-icon/twitterb.png' %}">
+                    <h4>Twitter</h4>
+                    <h4>Есть</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 text-center">
+                    <img src="{% static 'questions/img/social-icon/youtubeb.png' %}">
+                    <h4>Youtube</h4>
+                    <h4>Есть</h4>
+                </div>
+                <div class="col-md-3 col-sm-3 text-center">
+                    <img src="{% static 'questions/img/social-icon/instagrammb.png' %}">
+                    <h4>Instagramm</h4>
+                    <h4>Есть</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

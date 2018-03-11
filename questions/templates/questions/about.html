@@ -1,0 +1,121 @@
+{% extends 'questions/base.html' %}
+{% block content %}
+<section id="about-banner">
+        <div class="container">
+            <div class="row">
+                <div class="menu">
+                    <nav class="navbar navbar-default menu_top">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            {% load static %}
+                            <a href="/" class="logo"><img src="{% static 'questions/img/logo.gif' %}"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-menu" >
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/about">О сервисе</a></li>
+
+                                <li><a href="/contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row main-content">
+                <div class="col-md-12 text-banner text-center">
+                   <h1>О сервисе</h1>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="about-content-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 hidden-xs">
+                {% load static %}
+                <img src="{% static 'questions/img/rab.png' %}">
+            </div>
+            <div class="col-md-8 col-md-8 ">
+                <h2>Для работодателей</h2>
+                <p>Вы руководитель какого-нибудь предприятия и вам нужно проверить работу своего seo-специалиста или просто его не оказалось рядом и вы хотите посмотреть анализ вашего сайта, посмотреть позиции в поисковой выдаче - тогда вы попали по адресу! В нашем сервисе вы можете узнать всю интересующую вас информацию касательно вашего сайта, а также здесь вы не будете чувствовать себя не в своей тарелке, потому что мы постараемся донести всю эту информацию на “человеческом” языке, с пояснениями, с подсказками.
+                </p>
+                <ul>
+                    <p class="text-left">Какие услуги мы предоставляем именно вам:</p>
+                    <li> - проверка работы ваших специалистов ;</li>
+                    <li> - пояснения непонятных вам терминов;</li>
+                    <li> - указание на ошибки.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-content-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <h2>Для SEO - специалистов</h2>
+                <p>Все  студенты, обучающиеся на специальностях связанных с информационными технологиями, имеют бесплатный полный доступ ко всем нашим ресурсам! И чтобы воспользоваться этим шансом вам всего лишь  при регистрации надо предъявить фотографию действующего студенческого билета. Анализ сайта -  неизбежный процесс для студента веб-программиста, который, к сожалению, не всем легко дается.
+                </p>
+                <ul>
+                    <p>Наш сервис предоставляет вам: </p>
+                    <li> - бесплатный полный анализ сайта;
+                    </li>
+                    <li> - пояснение терминов;</li>
+                    <li> - указание на ошибки;
+                    </li>
+                    <li> - рекомендации к их исправлению.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-4 col-sm-4 hidden-xs">
+                {% load static %}
+                <img src="{% static 'questions/img/seosh.png' %}">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-content-three">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 hidden-xs">
+                <img src="{% static 'questions/img/std.png'%}">
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <h2>Для студентов</h2>
+                <p>Отслеживание позиций в поисковой выдаче, проверка на наличие TKD ,  на наличие в тексте ключевых фраз,качественный анализ ваших конкурентов,  вывод анализа в Excel и PDF - теперь для этого вам потребуется буквально несколько минут!
+                </p>
+
+                <ul>
+                    <p>Мы вам предоставляем:</p>
+                    <li> - качественный анализ;</li>
+                    <li> - отсутствие пояснений, подсказок, которые будут вас отвлекать
+                    ;</li>
+                    <li> - указание на ошибки; </li>
+                    <li> - рекомендации к их исправлению.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<div class="footer">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class=" col-md-offset-8 col-md-2 col-sm-2 col-xs-6">-->
+                <!--<img src="img/Google.png">-->
+            <!--</div>-->
+            <!--<div class="col-md-2 col-sm-2 col-xs-6">-->
+                <!--<img src="img/apple.png">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+{% endblock %}
